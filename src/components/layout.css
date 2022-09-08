@@ -9,8 +9,8 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  color: #FBDD78;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -18,7 +18,123 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  background: #000;
 }
+
+a {
+  color: #FBDD78;
+}
+
+.nav-item-wrapper {
+  display: block;
+  margin: 20px 0;
+}
+
+.nav-item-wrapper a {
+  display: inline-block;
+}
+
+button, a.button {
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 3px solid;
+  text-decoration: none;
+  padding: 8px 20px;
+  line-height: 1em;
+  margin: 0 8px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: color .5s, background-color .5s;
+}
+
+a.light {
+  border-color: #FBDD78;
+  color: #FBDD78;
+}
+
+a.light:hover {
+  background: #FBDD78;
+  color: #000;
+}
+
+nav a {
+  color: #FBDD78;
+  font-weight: 900;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px 10px;
+  transition: opacity .5s;
+}
+
+nav a:hover {
+  opacity: .4;
+}
+
+a.outline {
+  background: transparent;
+}
+
+.project {
+  max-width: 280px;
+  margin: 0 auto 70px;
+}
+
+.project > img {
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.project .project-laurels img {
+  position: relative;
+  left: -5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project .project-buttons {
+  display: flex;
+}
+
+.project .project-buttons .imdb {
+  transition: opacity .7s;
+}
+
+.project .project-buttons .imdb:hover {
+  opacity: .7;
+}
+
+.project .project-buttons .imdb img {
+  max-width: 90px;
+  margin: 0;
+  display: block;
+}
+
+.project .project-buttons .play {
+  text-transform: none;
+  padding: 3px 20px;
+  font-size: 16px;
+}
+
+.project .project-buttons .play img {
+  max-width: 20px;
+  margin: 0;
+  position: relative;
+  top: 4px;
+  left: -2px;
+
+}
+
+.resources-list {
+  margin: 0;
+}
+
+.resources-list li {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
 article,
 aside,
 details,
@@ -81,8 +197,6 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;

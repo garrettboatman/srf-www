@@ -1,19 +1,19 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import Logo from "../images/logo@2x.png"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ path, siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
       marginBottom: `1.45rem`,
+      padding: `0 20px`
     }}
   >
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        position: `absolute`,
+        left: -9999,
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -28,6 +28,21 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
+    {path !== '/' &&
+    <div style={{maxWidth: 920, margin: `20px auto 0`, display: `flex`}}>
+      <Link
+        style={{marginTop: 15}}
+        to="/"
+      >
+        <span style={{display: `block`, width: 35, height: 3, background: `#FBDD78`, marginBottom: 7}}></span>
+        <span style={{display: `block`, width: 35, height: 3, background: `#FBDD78`, marginBottom: 7}}></span>
+        <span style={{display: `block`, width: 35, height: 3, background: `#FBDD78`}}></span>
+      </Link>
+      <div style={{width: `100%`, textAlign: `center`}}>
+            <Link to="/"><img style={{maxWidth: 170, height: 42, marginLeft: -35}} src={Logo} /></Link>
+      </div>
+    </div>
+    }
   </header>
 )
 

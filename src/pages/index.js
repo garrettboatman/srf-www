@@ -1,30 +1,48 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import BigLogo from "../images/logo@2x.png"
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = ({path}) => (
+  <Layout path={path}>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,800;0,900;1,400&display=swap" rel="stylesheet"></link>
     <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
+    <div style={{textAlign: `center`, paddingTop: 100}}>
+      <img style={{maxWidth: 300, height: 74}} src={BigLogo} alt="Seek Refuge Productions" />
+      <div style={{
+        marginTop: 40,
+        marginBottom: 100,
+      }}>
+        <div className="nav-item-wrapper">
+        <Link
+            to="/about"
+            className="button light outline"
+          >
+            About
+        </Link>
+        </div>
+        <div className="nav-item-wrapper">
+        <Link
+            to="/projects"
+            className="button light outline"
+          >
+            Projects
+        </Link>
+        </div>
+        <div className="nav-item-wrapper">
+        <Link
+            to="/resources"
+            className="button light outline"
+          >
+            Resources
+        </Link>
+        </div>
+      </div>
+    </div>
   </Layout>
 )
 
