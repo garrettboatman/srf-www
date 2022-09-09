@@ -25,7 +25,7 @@ const ProjectsPage = ({path}) => (
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,800;0,900;1,400&display=swap" rel="stylesheet"></link>
     <Seo title="Home" />
-    <div style={{paddingTop: 50}}>
+    <div style={{paddingTop: 20}}>
     <div className="project">
         <img src={PAPoster} style={{}} />
         <div className="project-laurels">

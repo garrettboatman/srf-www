@@ -4,8 +4,6 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Undone from "../images/Undone.jpg"
-import IMDB from "../images/imdb.jpg"
 import Elma from "../images/elma.jpg"
 
 const AboutPage = ({path}) => (
