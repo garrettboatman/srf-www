@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Undone from "../images/Undone.jpg"
+
 import IMDB from "../images/imdb.jpg"
 import play from "../images/play.png"
 
@@ -27,11 +27,12 @@ const ProjectsPage = ({path}) => (
     <Seo title="Home" />
     <div style={{paddingTop: 20}}>
     <div className="project">
-        <img src={PAPoster} style={{}} />
+        <div className="project-poster-standard"><img src={PAPoster} style={{}} /></div>
         <div className="project-laurels">
           <img src={PALaurels} style={{}} />
         </div>
         <p>An aspiring rapper travels through the desert with her DJ and manager after receiving a suspiciously divine request to perform at a secret Coachella afterparty.</p>
+        <p className="project-credit">Directed by: <a href="https://www.imdb.com/name/nm12747219/">Trey Anderson</a></p>
         <div className="project-buttons">
           <a className="imdb" href="https://www.imdb.com/title/tt15089230/"><img src={IMDB} /></a>
           <a className="play button light" href="#"><img src={play} /> Play</a>
@@ -39,11 +40,12 @@ const ProjectsPage = ({path}) => (
       </div>
       
       <div className="project">
-        <img src={TDWLPoster} style={{}} />
+        <div className="project-poster-standard"><img src={TDWLPoster} style={{}} /></div>
         <div className="project-laurels">
           <img src={TDWLLaurels} style={{}} />
         </div>
         <p>The religious conflict of the Bosnian War drives a pregnant mother and her family to flee their village and seek refuge in the land of their enemy.</p>
+        <p className="project-credit">Directed by: <a href="https://www.imdb.com/name/nm4449173/">Kaio Kathriner</a></p>
         <div className="project-buttons">
           <a className="imdb" href="https://www.imdb.com/title/tt15746196/"><img src={IMDB} /></a>
           <a className="play button light" href="#"><img src={play} /> Play</a>
@@ -51,11 +53,12 @@ const ProjectsPage = ({path}) => (
       </div>
 
       <div className="project">
-        <img src={UndonePoster} style={{}} />
+        <div className="project-poster-standard"><img src={UndonePoster} style={{}} /></div>
         <div className="project-laurels">
           <img src={UndoneLaurels} style={{}} />
         </div>
         <p>A raw look at the unconventional experiences of an immigrant woman trying to make it as a TV personality in Los Angeles.</p>
+        <p className="project-credit">Directed by: <a href="https://www.j-stevens.com">J Stevens</a></p>
         <div className="project-buttons">
           <a className="imdb" href="https://www.imdb.com/title/tt9189370/"><img src={IMDB} /></a>
           <a className="play button light" href="#"><img src={play} /> Play</a>
@@ -63,8 +66,10 @@ const ProjectsPage = ({path}) => (
       </div>
     
       <div className="project">
-        <img src={DoubtPoster} style={{paddingBottom: 20}} />
-        <p><strong>"Doubt"</strong> is a music video directed by Elma Begovic <br /><br />Artist: Meetch</p>
+        <div className="project-poster-square"><img src={DoubtPoster} style={{paddingBottom: 20}} /></div>
+        <br />
+        <p><strong>"Doubt"</strong> is a music video for the artist "Meetch"</p>
+        <p className="project-credit">Directed by: <a href="https://www.imdb.com/name/nm3965943/">Elma Begovic</a></p>
         <div className="project-buttons">
           <a className="imdb" href="#" style={{width: 0, overflow: 'hidden'}}><img src={IMDB} /></a>
           <a className="play button light" href="#" style={{margin: 0}}><img src={play} /> Play</a>

@@ -42,7 +42,7 @@ const Layout = ({ children, path }) => {
             fontWeight: `900`
           }}
         >
-          © {new Date().getFullYear()} | elma@seekrefugeproductions.com
+          © {new Date().getFullYear()} | <a href="mailto:hello@seekrefugeproductions.com">hello@seekrefugeproductions.com</a>
           {` `}
         </footer>
       </div>

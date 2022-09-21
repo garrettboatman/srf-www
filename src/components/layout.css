@@ -75,6 +75,39 @@ a.outline {
   background: transparent;
 }
 
+.about-elma {
+  padding-top: calc(1334 / 1000 * 100%);
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.project-poster-standard {
+  padding-top: calc(1050 / 750 * 100%);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-poster-square {
+  padding-top: calc(826 / 750 * 100%);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-laurels {
+  position: relative;
+  padding-top: calc(128 / 529 * 100%);
+}
+
+.project-poster-standard img, .project-poster-square img, .about-elma img, .project-laurels img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .project {
   max-width: 280px;
   margin: 0 auto 70px;
@@ -86,11 +119,17 @@ a.outline {
   margin-bottom: 0;
 }
 
-.project .project-laurels img {
+.project .project-laurels {
   position: relative;
   left: -5px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.project .project-credit {
+  font-size: 14px;
+  padding-top: 0;
+  margin-top: -10px;
 }
 
 .project .project-buttons {

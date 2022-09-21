@@ -14,7 +14,8 @@ const AboutPage = ({path}) => (
     <Seo title="Home" />
     <div style={{maxWidth: 480, margin: `0 auto`}}>
     <div style={{padding: `0 20px`}}>
-      <img src={Elma} />
+      <div className="about-elma"><img src={Elma} /></div>
+      <p style={{marginTop: 5, fontSize: 14}}>Artist: <a href="https://www.meganschreiberdesigns.com">Megan Schreiber Designs</a></p>
       <p style={{}}>At Seek Refuge Productions, we have a penchant for bringing authentic and relative stories to cinematic life. <br /><br /> Through independent and organic collaborations, we work with artists who think and create outside of the Hollywood box.</p>
       <br />
       <a style={{margin: 0}} href="mailto:elma@seekrefugeproductions.com" className="button light">Get in Touch</a>
