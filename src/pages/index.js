@@ -10,7 +10,7 @@ const IndexPage = ({path}) => (
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,800;0,900;1,400&display=swap" rel="stylesheet"></link>
-    <Seo title="Home | Seek Refuge Productions" />
+    <Seo title="Seek Refuge Productions | Elma Begovic" />
     <div style={{textAlign: `center`, paddingTop: 100}}>
       <img style={{maxWidth: 300, height: 74}} src={BigLogo} alt="Seek Refuge Productions" />
       <div style={{
