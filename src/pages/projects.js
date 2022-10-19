@@ -35,7 +35,7 @@ const ProjectsPage = ({path}) => (
         <p className="project-credit">Directed by: <a href="https://www.imdb.com/name/nm12747219/">Trey Anderson</a></p>
         <div className="project-buttons">
           <a className="imdb" href="https://www.imdb.com/title/tt15089230/"><img src={IMDB} /></a>
-          <a className="play button light" href="#"><img src={play} /> Play</a>
+          <a className="play button light" href="https://vimeo.com/576100408"><img src={play} /> Play</a>
         </div>
       </div>
       
@@ -48,7 +48,7 @@ const ProjectsPage = ({path}) => (
         <p className="project-credit">Directed by: <a href="https://www.imdb.com/name/nm4449173/">Kaio Kathriner</a></p>
         <div className="project-buttons">
           <a className="imdb" href="https://www.imdb.com/title/tt15746196/"><img src={IMDB} /></a>
-          <a className="play button light" href="#"><img src={play} /> Play</a>
+          <a className="play button light" href="https://www.radiodialfilm.com"><img src={play} /> Play</a>
         </div>
       </div>
 
@@ -61,7 +61,7 @@ const ProjectsPage = ({path}) => (
         <p className="project-credit">Directed by: <a href="https://www.j-stevens.com">J Stevens</a></p>
         <div className="project-buttons">
           <a className="imdb" href="https://www.imdb.com/title/tt9189370/"><img src={IMDB} /></a>
-          <a className="play button light" href="#"><img src={play} /> Play</a>
+          <a className="play button light" href="https://www.amazon.com/Undone-Elma-Begovic/dp/B07RYBQPHG"><img src={play} /> Play</a>
         </div>
       </div>
     
@@ -72,7 +72,7 @@ const ProjectsPage = ({path}) => (
         <p className="project-credit">Directed by: <a href="https://www.imdb.com/name/nm3965943/">Elma Begovic</a></p>
         <div className="project-buttons">
           <a className="imdb" href="#" style={{width: 0, overflow: 'hidden'}}><img src={IMDB} /></a>
-          <a className="play button light" href="#" style={{margin: 0}}><img src={play} /> Play</a>
+          <a className="play button light" href="https://www.youtube.com/watch?v=iOUIVrvbbpA" style={{margin: 0}}><img src={play} /> Play</a>
         </div>
       </div>
 

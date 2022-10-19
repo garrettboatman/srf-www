@@ -15,11 +15,16 @@ const ResourcesPage = ({path}) => (
       <h1>Resources</h1>
       <p>An aspiring rapper travels through the desert with her DJ and manager after receiving a suspiciously divine request to perform at a secret Coachella afterparty.</p>
       <ul className="resources-list">
-        <li><a href="#">Raindance</a></li>
-        <li><a href="#">Art of the Guillotine</a></li>
-        <li><a href="#">Hope for Film</a></li>
-        <li><a href="#">No Film School</a></li>
-        <li><a href="#">Phillip Bloom</a></li>        
+        <li><a href="https://womenandhollywood.com">Women and Hollywood</a></li>
+        <li><a href="https://nofilmschool.com">No Film School</a></li>
+        <li><a href="https://shotdeck.com">Shot Deck</a></li>
+        <li><a href="https://www.sharegrid.com/losangeles">Sharegrid</a></li>
+        <li><a href="https://womeninfilm.org">Women In Film</a></li>
+        <li><a href="https://freethework.com">Free The Work</a></li>
+        <li><a href="https://arraynow.com">Array</a></li>
+        <li><a href="https://pillarsfund.org">Pillars Fund</a></li>
+        <li><a href="https://collab.sundance.org">Sundance Collab</a></li>
+        <li><a href="https://telefilm.ca/en">Telefilm</a></li>
       </ul>
     </div>
   </Layout>
