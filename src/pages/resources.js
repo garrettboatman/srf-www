@@ -13,7 +13,7 @@ const ResourcesPage = ({path}) => (
     <Seo title="Resources | Seek Refuge Productions" />
     <div style={{paddingTop: 20, maxWidth: 600, margin: '0 auto'}}>
       <h1>Resources</h1>
-      <p>An aspiring rapper travels through the desert with her DJ and manager after receiving a suspiciously divine request to perform at a secret Coachella afterparty.</p>
+      <p>Below is a growing directory of organizations and establishments that champion indie filmmaking and storytelling.</p>
       <ul className="resources-list">
         <li><a href="https://womenandhollywood.com">Women and Hollywood</a></li>
         <li><a href="https://nofilmschool.com">No Film School</a></li>

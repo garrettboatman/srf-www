@@ -21,7 +21,7 @@ const AboutPage = ({path}) => (
       <p>In 2017, I moved from Toronto to LA, where I've been living that 'alien of extraordinary ability' life [iykyk]. I pivoted toward writing and producing my own work as a way to weave themes of migration and identity, religious exploration, and the womxn immigrant experience into the industry's tapestry. I started SRP to become a better storyteller and grow my creative community. Building a story from inception to screening is an unmatched experience, like syzygy in space. I am reminded of that well misquoted line from <i>Field of Dreams</i> (another movie I first saw dubbed in Deutsch), 'if you build it, they will come'. This site hosts work I have written and produced - independently, with collaborators, and via grants.</p>
       <p><strong>[tl;dr]</strong> I love movies, love making them too. Reach out if you're into that as well.</p>
       <br />
-      <a style={{margin: 0}} href="mailto:elma@seekrefugeproductions.com" className="button light">Get in Touch</a>
+      <a style={{margin: 0}} href="mailto:hello@seekrefugeproductions.com" className="button light">Get in Touch</a>
     </div>
     </div>
   </Layout>

@@ -26,19 +26,6 @@ const ProjectsPage = ({path}) => (
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,800;0,900;1,400&display=swap" rel="stylesheet"></link>
     <Seo title="Projects | Seek Refuge Productions" />
     <div style={{paddingTop: 20}}>
-    <div className="project">
-        <div className="project-poster-standard"><img src={PAPoster} style={{}} /></div>
-        <div className="project-laurels">
-          <img src={PALaurels} style={{}} />
-        </div>
-        <p>An aspiring rapper travels through the desert with her DJ and manager after receiving a suspiciously divine request to perform at a secret Coachella afterparty.</p>
-        <p className="project-credit">Directed by: <a href="https://www.imdb.com/name/nm12747219/">Trey Anderson</a></p>
-        <div className="project-buttons">
-          <a className="imdb" href="https://www.imdb.com/title/tt15089230/"><img src={IMDB} /></a>
-          <a className="play button light" href="https://vimeo.com/576100408"><img src={play} /> Play</a>
-        </div>
-      </div>
-      
       <div className="project">
         <div className="project-poster-standard"><img src={TDWLPoster} style={{}} /></div>
         <div className="project-laurels">
@@ -52,6 +39,21 @@ const ProjectsPage = ({path}) => (
         </div>
       </div>
 
+
+      <div className="project">
+        <div className="project-poster-standard"><img src={PAPoster} style={{}} /></div>
+        <div className="project-laurels">
+          <img src={PALaurels} style={{}} />
+        </div>
+        <p>An aspiring rapper travels through the desert with her DJ and manager after receiving a suspiciously divine request to perform at a secret Coachella afterparty.</p>
+        <p className="project-credit">Directed by: <a href="https://www.imdb.com/name/nm12747219/">Trey Anderson</a></p>
+        <div className="project-buttons">
+          <a className="imdb" href="https://www.imdb.com/title/tt15089230/"><img src={IMDB} /></a>
+          <a className="play button light" href="https://vimeo.com/576100408"><img src={play} /> Play</a>
+        </div>
+      </div>
+      
+    
       <div className="project">
         <div className="project-poster-standard"><img src={UndonePoster} style={{}} /></div>
         <div className="project-laurels">
@@ -64,6 +66,7 @@ const ProjectsPage = ({path}) => (
           <a className="play button light" href="https://www.amazon.com/Undone-Elma-Begovic/dp/B07RYBQPHG"><img src={play} /> Play</a>
         </div>
       </div>
+    
     
       <div className="project">
         <div className="project-poster-square"><img src={DoubtPoster} style={{paddingBottom: 20}} /></div>
