@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Seek Refuge Productions | Elma Begovic`,
+    description: `A production company from Elma Begovic in Los Angeles, CA`,
+    siteUrl: `https://seekrefugeproductions.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
