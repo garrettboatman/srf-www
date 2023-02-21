@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Seek Refuge Productions | Elma Begovic`,
+    author: `@elmabegovic`,
     description: `A production company from Elma Begovic in Los Angeles, CA`,
     siteUrl: `https://seekrefugeproductions.com`,
   },
