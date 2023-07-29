@@ -35,6 +35,14 @@ const IndexPage = ({path}) => (
         </div>
         <div className="nav-item-wrapper">
         <Link
+            to="/press"
+            className="button light outline"
+          >
+            Press
+        </Link>
+        </div>
+        <div className="nav-item-wrapper">
+        <Link
             to="/resources"
             className="button light outline"
           >
