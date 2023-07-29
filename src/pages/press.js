@@ -5,12 +5,12 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const ResourcesPage = ({path}) => (
+const PressPage = ({path}) => (
   <Layout path={path}>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,800;0,900;1,400&display=swap" rel="stylesheet"></link>
-    <Seo title="Resources | Seek Refuge Productions" />
+    <Seo title="Press | Seek Refuge Productions" />
     <div style={{paddingTop: 20, maxWidth: 600, margin: '0 auto'}}>
       <h1>Press</h1>
       <p>Articles and interviews featuring Elma Begovic.</p>
@@ -28,4 +28,4 @@ const ResourcesPage = ({path}) => (
   </Layout>
 )
 
-export default ResourcesPage
+export default PressPage
