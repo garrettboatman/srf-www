@@ -1,3 +1,7 @@
+:root {
+  --primary: #fbdd78;
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -5,24 +9,31 @@ html {
   box-sizing: border-box;
   overflow-y: scroll;
 }
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #FBDD78;
+  color: #fbdd78;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
+  -moz-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   background: #000;
 }
 
+main {
+  margin: 0 auto;
+  max-width: 960;
+  padding: 0 1.0875rem 1.45rem;
+}
+
 a {
-  color: #FBDD78;
+  color: #fbdd78;
 }
 
 .nav-item-wrapper {
@@ -34,10 +45,11 @@ a {
   display: inline-block;
 }
 
-button, a.button {
+button,
+a.button {
   border-radius: 8px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 800;
   border: 3px solid;
   text-decoration: none;
   padding: 8px 20px;
@@ -45,30 +57,30 @@ button, a.button {
   margin: 0 8px;
   font-size: 18px;
   letter-spacing: 1px;
-  transition: color .5s, background-color .5s;
+  transition: color 0.5s, background-color 0.5s;
 }
 
 a.light {
-  border-color: #FBDD78;
-  color: #FBDD78;
+  border-color: #fbdd78;
+  color: #fbdd78;
 }
 
 a.light:hover {
-  background: #FBDD78;
+  background: #fbdd78;
   color: #000;
 }
 
 nav a {
-  color: #FBDD78;
+  color: #fbdd78;
   font-weight: 900;
   text-decoration: none;
   margin: 0 10px;
   padding: 5px 10px;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
 nav a:hover {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 a.outline {
@@ -101,7 +113,10 @@ a.outline {
   padding-top: calc(128 / 529 * 100%);
 }
 
-.project-poster-standard img, .project-poster-square img, .about-elma img, .project-laurels img {
+.project-poster-standard img,
+.project-poster-square img,
+.about-elma img,
+.project-laurels img {
   position: absolute;
   width: 100%;
   top: 0;
@@ -110,7 +125,7 @@ a.outline {
 
 .project {
   max-width: 280px;
-  margin: 0 auto 70px;
+  margin: 0 auto 90px;
 }
 
 .project > img {
@@ -137,11 +152,11 @@ a.outline {
 }
 
 .project .project-buttons .imdb {
-  transition: opacity .7s;
+  transition: opacity 0.7s;
 }
 
 .project .project-buttons .imdb:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .project .project-buttons .imdb img {
@@ -162,17 +177,16 @@ a.outline {
   position: relative;
   top: 4px;
   left: -2px;
-
 }
 
 .resources-list {
   margin: 40px 0 0 0;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .resources-list li {
   list-style-type: none;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 article,
@@ -237,7 +251,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-weight: bold;
+  font-weight: 900;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
@@ -266,6 +280,7 @@ img {
   border-style: none;
   max-width: 100%;
   margin-left: 0;
+  height: auto;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
@@ -328,22 +343,22 @@ button,
 select {
   text-transform: none;
 }
-[type="reset"],
-[type="submit"],
+[type='reset'],
+[type='submit'],
 button,
-html [type="button"] {
+html [type='button'] {
   -webkit-appearance: button;
 }
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner,
 button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring,
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
@@ -370,21 +385,21 @@ legend {
 textarea {
   overflow: auto;
 }
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box;
   padding: 0;
 }
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 ::-webkit-input-placeholder {
@@ -700,10 +715,10 @@ td,
 th {
   text-align: left;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
-  font-feature-settings: "tnum";
-  -moz-font-feature-settings: "tnum";
-  -ms-font-feature-settings: "tnum";
-  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: 'tnum';
+  -moz-font-feature-settings: 'tnum';
+  -ms-font-feature-settings: 'tnum';
+  -webkit-font-feature-settings: 'tnum';
   padding-left: 0.96667rem;
   padding-right: 0.96667rem;
   padding-top: 0.725rem;
@@ -721,8 +736,8 @@ tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
-    "Liberation Mono", Menlo, Courier, monospace;
+  font-family: 'SFMono-Regular', Consolas, 'Roboto Mono', 'Droid Sans Mono',
+    'Liberation Mono', Menlo, Courier, monospace;
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
@@ -736,13 +751,13 @@ code:after,
 tt:before,
 tt:after {
   letter-spacing: -0.2em;
-  content: " ";
+  content: ' ';
 }
 pre code:before,
 pre code:after,
 pre tt:before,
 pre tt:after {
-  content: "";
+  content: '';
 }
 @media only screen and (max-width: 480px) {
   html {

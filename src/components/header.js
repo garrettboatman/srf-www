@@ -1,13 +1,12 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
-import Logo from "../images/logo@2x.png"
+import Image from 'next/image';
+import Link from 'next/link';
+import Logo from '../../public/images/logo@2x.png';
 
-const Header = ({ path, siteTitle }) => (
+const Header = ({ isHome = false }) => (
   <header
     style={{
       marginBottom: `1.45rem`,
-      padding: `0 20px`
+      padding: `0 20px`,
     }}
   >
     <div
@@ -18,40 +17,60 @@ const Header = ({ path, siteTitle }) => (
     >
       <h1 style={{ margin: 0 }}>
         <Link
-          to="/"
+          href="/"
           style={{
             color: `white`,
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          Seek Refuge Productions
         </Link>
       </h1>
     </div>
-    {path !== '/' &&
-    <div style={{maxWidth: 920, margin: `20px auto 0`, display: `flex`}}>
-      <Link
-        style={{marginTop: 15}}
-        to="/"
-      >
-        <span style={{display: `block`, width: 35, height: 3, background: `#FBDD78`, marginBottom: 7}}></span>
-        <span style={{display: `block`, width: 35, height: 3, background: `#FBDD78`, marginBottom: 7}}></span>
-        <span style={{display: `block`, width: 35, height: 3, background: `#FBDD78`}}></span>
-      </Link>
-      <div style={{width: `100%`, textAlign: `center`}}>
-            <Link to="/"><img style={{maxWidth: 170, height: 42, marginLeft: -35}} src={Logo} /></Link>
+    {!isHome && (
+      <div style={{ maxWidth: 920, margin: `20px auto 0`, display: `flex` }}>
+        <Link style={{ marginTop: 15 }} href="/">
+          <span
+            style={{
+              display: `block`,
+              width: 35,
+              height: 3,
+              background: `#FBDD78`,
+              marginBottom: 7,
+            }}
+          ></span>
+          <span
+            style={{
+              display: `block`,
+              width: 35,
+              height: 3,
+              background: `#FBDD78`,
+              marginBottom: 7,
+            }}
+          ></span>
+          <span
+            style={{
+              display: `block`,
+              width: 35,
+              height: 3,
+              background: `#FBDD78`,
+            }}
+          ></span>
+        </Link>
+        <div style={{ width: `100%`, textAlign: `center` }}>
+          <Link href="/">
+            <Image
+              priority
+              src={Logo}
+              alt="Seek Refuge Productions"
+              sizes="170w"
+              style={{ maxWidth: 170, marginLeft: -35, height: 'auto' }}
+            />
+          </Link>
+        </div>
       </div>
-    </div>
-    }
+    )}
   </header>
-)
+);
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Header;
